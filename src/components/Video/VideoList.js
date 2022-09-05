@@ -126,8 +126,8 @@ const VideoList = ({ onVideo }) => {
   return (
     <div className="carouselContainer">
       <Carousel
-        swipeable={false}
-        draggable={false}
+        swipeable={true}
+        draggable={true}
         responsive={responsive}
         ssr={true} // means to render carousel on server-side.
         infinite={true}
