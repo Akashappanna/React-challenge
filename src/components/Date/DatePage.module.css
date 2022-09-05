@@ -1,0 +1,48 @@
+.datePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fromDate h2,
+.toDate h2 {
+  width: max-content;
+}
+.fromDate span,
+.toDate span {
+  font-size: 14px;
+  font-weight: 300;
+}
+.duration {
+  margin: 20px;
+  width: 100%;
+}
+
+.duration input {
+  padding: 20px 10px;
+  margin: auto;
+  display: block;
+  outline: none;
+  border-radius: 17px;
+  border: none;
+  width: 30%;
+  box-shadow: 0px 0px 10px 5px #19090926;
+}
+.duration label {
+  margin: 20px auto;
+  display: block;
+  width: 30%;
+}
+
+@media screen and (max-width: 1000px) {
+  .duration input,
+  .duration label {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .duration input,
+  .duration label {
+    width: 80%;
+  }
+}

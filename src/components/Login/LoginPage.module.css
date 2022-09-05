@@ -1,0 +1,194 @@
+.loginPage {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.bg {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 263px;
+  background: transparent url("../../assets/cover.png") 0% 0% no-repeat
+    padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.login {
+  top: -181px;
+  left: 0;
+  position: relative;
+  width: 577px;
+  height: 687px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 6px;
+  opacity: 1;
+  margin: auto;
+}
+
+.loginHeader {
+  /* Layout Properties */
+  top: 81px;
+  left: 395px;
+  width: 577px;
+  height: 78px;
+  /* UI Properties */
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 7px #00000029;
+  border-radius: 6px 6px 0px 0px;
+  opacity: 1;
+}
+.logo {
+  top: 0;
+  left: 0;
+  width: 99px;
+  height: 100%;
+  /* UI Properties */
+  background: transparent url("../../assets/amazon.png") 0% 0% no-repeat
+    padding-box;
+  opacity: 1;
+  display: block;
+  margin: auto;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main h4 {
+  width: 100%;
+  height: 29px;
+  font: normal normal normal 29px/35px Josefin Sans;
+  letter-spacing: 0px;
+  color: #20b716;
+  opacity: 1;
+  text-align: center;
+  font: normal normal normal 29px/35px Josefin Sans;
+}
+
+.tree {
+  width: 385px;
+  height: 128px;
+  opacity: 1;
+  margin: 10px 0px;
+}
+.loginFields input::placeholder {
+  color: #20b716;
+}
+.loginFields input {
+  width: 385px;
+  padding: 20px 2px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  font: normal normal normal 16px/19px Josefin Sans;
+}
+.submit button {
+  width: 100%;
+  font: normal normal normal 19px/23px Josefin Sans;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  background: #20b716 0% 0% no-repeat padding-box;
+  border-radius: 40px;
+  border: none;
+  padding: 20px;
+  margin-top: 20px;
+}
+.userRecover {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px;
+}
+.forgot button {
+  font: normal normal normal 14px/18px Josefin Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+.newUser,
+.newUser button {
+  font: normal normal normal 14px/18px Josefin Sans;
+  letter-spacing: 0px;
+  color: #d9185f;
+  opacity: 1;
+}
+
+p {
+  font: normal normal normal 16px/19px Josefin Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+.socialSignIn {
+  width: 100%;
+}
+
+.links {
+  width: 80%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: auto;
+  background: #4285f4 0% 0% no-repeat padding-box;
+  opacity: 1;
+  padding: 10px 0px;
+  margin-top: 10px;
+}
+.links span {
+  font: normal normal 600 14px/18px Josefin Sans;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+.links img {
+  margin-left: 5px;
+}
+.errorMsg {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font: normal normal normal 13px/19px Myriad Pro;
+  letter-spacing: 0px;
+  color: #ee2d6e;
+  opacity: 1;
+}
+
+button:disabled {
+  background: #20b71642 0% 0% no-repeat padding-box;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 500px) {
+  .tree {
+    width: 80%;
+    height: 12%;
+  }
+  .loginFields input {
+    width: 100%;
+  }
+
+  .login {
+    width: 280px;
+  }
+
+  .loginHeader {
+    width: 100%;
+  }
+}

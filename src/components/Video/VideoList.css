@@ -1,0 +1,90 @@
+.videoPage {
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 20px 10px;
+  background-color: black;
+}
+
+.logout {
+  width: 100%;
+  font: normal normal normal 19px/23px Josefin Sans;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  background: #20b716 0% 0% no-repeat padding-box;
+  border-radius: 40px;
+  border: none;
+  padding: 20px;
+  margin-top: 20px;
+}
+.react-player {
+  z-index: -1;
+}
+.player {
+  position: relative;
+}
+.videoThumb {
+  position: absolute !important;
+  bottom: 80px;
+  left: 0;
+  z-index: 100;
+  width: 80%;
+  padding: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  outline: none;
+  background-color: #c7c7ca63;
+}
+
+.thumbContainer {
+  width: 140px;
+  height: 140px;
+  padding: 20px;
+  background-color: black;
+  border-radius: 49%;
+  margin: 0px 5px;
+}
+.videoThumb img {
+  width: 100%;
+  height: 100%;
+}
+.carouselContainer {
+  /* display: none; */
+  visibility: hidden;
+}
+.react-player:hover + .carouselContainer {
+  /* display: flex; */
+  visibility: visible;
+}
+.carouselContainer:hover {
+  /* display: flex; */
+  visibility: visible;
+}
+.date {
+  width: max-content;
+  margin: auto;
+}
+.date button {
+  border-radius: 17px;
+  background-color: white;
+  padding: 20px;
+  font-size: 18px;
+  width: max-content;
+  border: 2px solid black;
+}
+.date button:hover {
+  border-radius: 17px;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  padding: 20px;
+  font-size: 18px;
+  width: max-content;
+}
+@media screen and (max-width: 768px) {
+  .thumbContainer {
+    width: 60px;
+    height: 60px;
+  }
+}
