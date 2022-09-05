@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import LoginPage from "../components/Login/LoginPage";
 import { useNavigate } from "react-router-dom";
 
@@ -6,10 +6,10 @@ const Login = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (localStorage.getItem("isLogged") == 1) {
+    if (localStorage.getItem("isLogged") === 1) {
       navigate("/video");
     }
-  }, []);
+  }, [navigate]);
 
   console.log(localStorage.getItem("isLogged"));
 
