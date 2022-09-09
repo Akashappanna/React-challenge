@@ -21,12 +21,37 @@ const DatePage = () => {
   };
 
   const enterHandler = (e) => {
+    // if (e.key === "Enter") {
+    //   let result = new Date(from);
+    //   result.setDate(result.getDate() + duration);
+    //   setTo(result);
+    // }
+
+    const weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
     if (e.key === "Enter") {
-      var result = new Date(from);
-      result.setDate(result.getDate() + duration);
-      setTo(result);
+      let finalDate = new Date(from);
+
+      // iterating through given user duration
+      for (let i = 1; i <= duration; i++) {
+        finalDate.setDate(finalDate.getDate() + 1);
+        if (weekday[finalDate.getDay()] === "Sat") {
+          finalDate.setDate(finalDate.getDate() + 2);
+        }
+      }
+      setTo(finalDate);
     }
   };
+
+  // 7 days in a week
+  // check present day if it is friday add 2 to it  if
+
+  // user input is limit
+  // n=3
+  // present date =8
+  // iterating to the range 3 from 0
+  // condition if present day is (saturday or sunday)  add 1 to range
+  //
 
   useEffect(() => {
     const timer = setTimeout(() => {

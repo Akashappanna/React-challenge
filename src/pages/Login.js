@@ -6,7 +6,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (localStorage.getItem("isLogged") === 1) {
+    if (localStorage.getItem("isLogged") === "1") {
       navigate("/video");
     }
   }, [navigate]);

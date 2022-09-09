@@ -185,7 +185,7 @@ button:disabled {
   }
 
   .login {
-    width: 280px;
+    width: 100%;
   }
 
   .loginHeader {
