@@ -35,23 +35,20 @@ const DatePage = () => {
       // iterating through given user duration
       for (let i = 1; i <= duration; i++) {
         finalDate.setDate(finalDate.getDate() + 1);
+
+        //this will check whether the date is saturday or not
         if (weekday[finalDate.getDay()] === "Sat") {
           finalDate.setDate(finalDate.getDate() + 2);
+        }
+
+        //if day is Saturday by default it will check with Sunday
+        if (weekday[finalDate.getDay()] === "Sun") {
+          finalDate.setDate(finalDate.getDate() + 1);
         }
       }
       setTo(finalDate);
     }
   };
-
-  // 7 days in a week
-  // check present day if it is friday add 2 to it  if
-
-  // user input is limit
-  // n=3
-  // present date =8
-  // iterating to the range 3 from 0
-  // condition if present day is (saturday or sunday)  add 1 to range
-  //
 
   useEffect(() => {
     const timer = setTimeout(() => {
